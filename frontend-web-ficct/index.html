@@ -9,12 +9,12 @@
   <link rel="icon" type="image/x-icon" id="dynamicFavicon">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script defer>
-    fetch('http://www.ficct.uagrm.edu.bo:3000/api/faculty/portal')
+    fetch('https://www.ficct.uagrm.edu.bo:3000/api/faculty/portal')
       .then(response => response.json())
       .then(data => {
         const iconUrl = data.path_image;
         const favicon = document.getElementById('dynamicFavicon');
-        favicon.href = "http://localhost:3000/uploads/faculty/" + iconUrl || 'favicon.ico';
+        favicon.href = "https://localhost:3000/uploads/faculty/" + iconUrl || 'favicon.ico';
       })
       .catch(error => {
         console.error('Error al obtener la información de la API:', error);
@@ -25,6 +25,6 @@
 <body class="antialiased">
   <app-root></app-root>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script src="runtime.bde8a3d4c3f17adb.js" type="module"></script><script src="polyfills.f0828a21a15538c8.js" type="module"></script><script src="scripts.f312eaaaec513d96.js" defer></script><script src="main.11402d1e7feed1cb.js" type="module"></script></body>
+<script src="runtime.bde8a3d4c3f17adb.js" type="module"></script><script src="polyfills.f0828a21a15538c8.js" type="module"></script><script src="scripts.f312eaaaec513d96.js" defer></script><script src="main.a789479c6f4a6aa0.js" type="module"></script></body>
 
 </html>
